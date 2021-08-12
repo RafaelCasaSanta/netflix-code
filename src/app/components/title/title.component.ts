@@ -34,4 +34,5 @@ export class TitleComponent implements OnInit {
     toggleSound(){
         return this.trailer.nativeElement.muted = !this.trailer.nativeElement.muted;
     }
+
 }

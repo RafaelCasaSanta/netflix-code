@@ -45,6 +45,7 @@ export class AppComponent {
         parts:2,
         categories: ['Epic', 'Sci-fi', 'Western']
     },
+
 ];
 
 

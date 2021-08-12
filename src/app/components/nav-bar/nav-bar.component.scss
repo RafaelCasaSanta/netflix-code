@@ -11,12 +11,10 @@
         max-width: 115px;
         line-height: 28px;
         height: 28px;
+
     }
     img.avatar{
-        height: 10rem;
-    }
-    img {
-        height: 24px;
+        height: 4rem;
     }
 
     ul{
@@ -75,7 +73,7 @@
         background-repeat: repeat-x;
     }
     .navbar-brand.flex-grow-1 {
-        flex-grow: initial!important;
+        flex-grow: initial;
     }
     .navbar ul.nav {
         flex-grow: 1!important;
@@ -85,7 +83,7 @@
         font-weight: bold;
     }
     .navbar img {
-        height: 34px;
+        height: 4rem;
     }
 
 
@@ -103,3 +101,6 @@
     }
 }
 
+.material-icons{
+    margin: 1rem 2rem;
+}

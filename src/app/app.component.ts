@@ -9,6 +9,9 @@ import { ITitles } from './interfaces/movie-titles.interface';
 })
 export class AppComponent {
 
+    menuOpened = false;
+
+
     listTitles = [{
         trailer: 'assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
         cover: 'assets/images/guardios-da-galaxia.jpg',
@@ -18,7 +21,7 @@ export class AppComponent {
         parts:1,
         categories: ['epico', 'fantasia']
     }, {
-        trailer: 'assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
+        trailer: 'assets/videos/cap_trailer.mp4',
         cover: 'assets/images/capitao-america-o-primeiro-vingador.jpg',
         name: 'Capitão America Primeiro Vingador',
         relevance: 90,
@@ -26,7 +29,7 @@ export class AppComponent {
         parts:1,
         categories: ['epico', 'fantasia']
     }, {
-        trailer: 'assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
+        trailer: 'assets/videos/what_if.mp4',
         cover: 'assets/images/WHAT-IF-E-SE.jpg',
         name: 'WHAT IF ?',
         relevance: 75,
@@ -34,7 +37,7 @@ export class AppComponent {
         parts:1,
         categories: ['epico', 'fantasia']
     },  {
-        trailer: 'assets/videos/trailer_guardioes_da_galaxia_1080p.mp4',
+        trailer: 'assets/videos/mandalorian.mp4',
         cover: 'assets/images/sw.jpg',
         name: 'O Mandaloriano',
         relevance: 500,
@@ -43,5 +46,14 @@ export class AppComponent {
         categories: ['Epic', 'Sci-fi', 'Western']
     },
 ];
+
+
+    setMenuState(state: boolean){
+        this.menuOpened = state;
+    }
+
+    closeMenu(){
+        this.menuOpened = false;
+    }
 
 }

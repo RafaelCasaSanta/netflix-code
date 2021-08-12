@@ -2,7 +2,24 @@
 body {
     background-color: #1B1B1B!important;
     padding-top: 60px;
+    @media (min-width: 992px) {
+        body {
+            padding-top: 0;
+        }
+    }
+
+
 }
+
+
+.relevance {
+    color: #3FAD56;
+    font-weight: bold;
+}
+
+
+
+
 .backdrop {
     background-color: rgba(0,0,0,.4);
     position: fixed;
@@ -11,16 +28,4 @@ body {
     right: 0;
     bottom: 0;
     z-index: 999;
-}
-
-.relevance {
-    color: #3FAD56;
-    font-weight: bold;
-}
-
-
-@media (min-width: 992px) {
-    body {
-        padding-top: 0;
-    }
 }

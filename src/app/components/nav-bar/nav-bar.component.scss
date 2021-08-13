@@ -1,8 +1,6 @@
 .navbar {
     z-index: 1000;
-    &.navbar.bg-dark {
-        background-color: rgba(0,0,0,.6)!important;
-    }
+
     .form-control {
         background-color: #1B1B1B!important;
         color: #FFF;
@@ -102,5 +100,15 @@
 }
 
 .material-icons{
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
+    border-radius: 2rem;
+}
+
+
+.fixed-top {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }

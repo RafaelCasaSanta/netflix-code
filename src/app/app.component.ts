@@ -43,7 +43,15 @@ export class AppComponent {
         age: 18,
         parts:2,
         categories: ['Epic', 'Sci-fi', 'Western']
-    },
+    },{
+    trailer: 'assets/videos/ss.mp4',
+    cover: 'assets/images/ss.jpg',
+    name: 'O Esquadrão Suicida',
+    relevance: 500,
+    age: 18,
+    parts:2,
+    categories: ['Epic', 'Sci-fi', 'Western']
+    }
 
 ];
 
@@ -57,7 +65,7 @@ export class AppComponent {
     }
 
 
-   
+
     imagesForSlider = [
         {path: '/assets/images/avatar.jpg'},
         {path: '/assets/images/full-banner.jpg'},

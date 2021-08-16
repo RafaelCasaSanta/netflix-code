@@ -13,9 +13,37 @@ export class NavBarComponent  implements OnInit {
 
     @Input() open = false;
 
+    public ishowingMessage: boolean;
+
     constructor(){
 
+        this.ishowingMessage = false;
     }
+
+    public hideMessage(): void{
+        this.ishowingMessage = false;
+    }
+
+
+    public ngDoCheck() : void {
+
+		console.log( "ngDoCheck() - Change detection triggered." );
+
+	}
+
+
+	// I show the peer-pressure message.
+	public showMessage() {
+
+		this.ishowingMessage = true;
+
+    }
+
+
+
+
+
+
 
     ngOnInit(): void {
 
@@ -26,4 +54,12 @@ export class NavBarComponent  implements OnInit {
         this.open = !this.open;
         this.menuToggle.emit(this.open)
     }
+
+
+
+
+
 }
+
+
+

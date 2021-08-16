@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ITitles } from './interfaces/movie-titles.interface';
-
-
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -56,5 +55,24 @@ export class AppComponent {
     closeMenu(){
         this.menuOpened = false;
     }
+
+
+   
+    imagesForSlider = [
+        {path: '/assets/images/avatar.jpg'},
+        {path: '/assets/images/full-banner.jpg'},
+        {path: '/assets/images/eu-sou-a-lenda.jpg'},
+        {path: '/assets/images/ep9.jpg'},
+        {path: '/assets/images/card.jpg'}
+    ];
+
+    ngOnInit(){
+
+    }
+
+	handleCarouselEvents(event:any) {
+		console.log(event);
+	}
+
 
 }

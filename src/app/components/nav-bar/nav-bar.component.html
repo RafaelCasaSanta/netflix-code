@@ -8,15 +8,15 @@
         <img src="assets/images/logo.png" class="my-1 mx-2" alt="Netflix">
     </a>
 
-    <ul class="nav text-white d-none d-lg-flex">
+    <ul class="nav text-white d-none d-lg-flex teste">
         <li class="nav-item d-xl-none">
-            <a class="nav-link active text-reset" href="#">Navegar</a>
+            <a class="nav-link  text-reset"(hesitate)="showMessage()" (click)="hideMessage()" href="#">Navegar</a>
         </li>
         <li class="nav-item d-xl-none">
-            <a class="nav-link text-reset" href="#">Infantil</a>
+            <a class="nav-link " href="#">Infantil</a>
         </li>
         <li class="nav-item d-none d-xl-flex">
-            <a class="nav-link active text-reset" href="#">Inicío</a>
+            <a class="nav-link  text-reset" href="#">Inicío</a>
         </li>
         <li class="nav-item d-none d-xl-flex">
             <a class="nav-link text-reset" href="#">Séries</a>
@@ -41,7 +41,9 @@
         <img class="avatar" src="assets/images/avatar1.png" alt="Avatar" class="mr-2">
         <div class="media-body">
             <p class="h6 m-0 text-uppercase">
-                <i class="material-icons">arrow_drop_down</i>
+                <button class="material-icons" (click)="toggle()">
+                arrow_drop_down
+            </button>
             </p>
         </div>
     </div>

@@ -9,20 +9,21 @@ import { ListTitlesComponent } from './components/list-titles/list-titles.compon
 import { FooterComponent } from './components/footer/footer.component';
 import { TitleComponent } from './components/title/title.component';
 
+import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { CarouselComponent } from './components/carousel/carousel.component';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavBarComponent,
-    FullBannerComponent,
-    ListTitlesComponent,
-    FooterComponent,
-    TitleComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavBarComponent,
+        FullBannerComponent,
+        ListTitlesComponent,
+        FooterComponent,
+        TitleComponent,
+        CarouselComponent,
+    ],
+    imports: [BrowserModule, AppRoutingModule, IvyCarouselModule],
+    providers: [],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

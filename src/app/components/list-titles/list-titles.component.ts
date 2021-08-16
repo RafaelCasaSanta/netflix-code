@@ -13,5 +13,19 @@ export class ListTitlesComponent implements OnInit {
 
     constructor() {}
 
+    images = [
+
+        {path: '/assets/images/ss.png'},
+        {path: '/assets/images/ep9.jpg'},
+        {path: '/assets/images/eu-sou-a-lenda.jpg'},
+        {path: '/assets/images/full-banner.jpg'},
+
+
+
+    ];
+
+
+
+
     ngOnInit(): void {}
 }

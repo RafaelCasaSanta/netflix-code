@@ -51,9 +51,15 @@ export class AppComponent {
     age: 18,
     parts:2,
     categories: ['Epic', 'Sci-fi', 'Western']
-    }
-
-];
+    }, {
+    trailer: 'assets/videos/TWD.mp4',
+    cover: 'assets/images/twd.jpg',
+    name: 'The Walking Dead',
+    relevance: 500,
+    age: 18,
+    parts:11,
+    categories: ['Epic', 'Sci-fi', 'Western']
+    }, ]
 
 
     setMenuState(state: boolean){

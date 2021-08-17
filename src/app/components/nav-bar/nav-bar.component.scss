@@ -21,16 +21,18 @@
 
     ul{
         &.sidebar {
+        z-index: 10000;
         color: #999898;
         max-width: 250px;
         background-color: #1B1B1B!important;
-        position: absolute;
+        position: fixed;
         top: 60px;
         left: -250px;
         height: calc(100vh - 60px);
         overflow-y: auto;
         transition: all 0.1s ease-out;
         opacity: .5;
+        align-items: baseline;
         }
         li {
             padding: .3em 1em;

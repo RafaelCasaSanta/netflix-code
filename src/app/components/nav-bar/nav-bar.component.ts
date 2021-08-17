@@ -25,11 +25,7 @@ export class NavBarComponent  implements OnInit {
     }
 
 
-    public ngDoCheck() : void {
-
-		console.log( "ngDoCheck() - Change detection triggered." );
-
-	}
+    
 
 
 	// I show the peer-pressure message.

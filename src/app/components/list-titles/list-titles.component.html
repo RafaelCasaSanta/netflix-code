@@ -5,12 +5,20 @@
 
     <div class="d-flex flex-nowrap overflow-hidden">
 
+    <carousel
+    [height]="400"
+    [objectFit]="'contain'"
+    [cellWidth]="500"
+    [cellsToShow]="3"
+    [loop]="true"
 
 
 
-
-        <app-title *ngFor="let title of list" [title]="title"></app-title>
-
+    >
+        <div class="carousel-cell"  *ngFor="let title of list">
+            <app-title [title]="title"></app-title>
+        </div>
+    </carousel>
     </div>
 
 </div>

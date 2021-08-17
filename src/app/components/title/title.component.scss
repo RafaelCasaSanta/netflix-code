@@ -1,11 +1,11 @@
 .title-item {
     position: relative;
-    margin-right: 10px;
+    margin-right: 13px;
 }
 
 .title-item .items {
     position: absolute;
-    bottom: 0;
+    bottom: 84px;
     left: 0;
     right: 0;
     color: #fff;
@@ -19,13 +19,15 @@
     opacity: 0;
 }
 .title-item img {
-    height:10rem;
+
+    display:flex;
+    height:14rem;
     width: 100%;
 }
 .title-item video {
     width: 100%;
     display: none;
-    position: absolute;
+    position: inherit;
     top: 0;
     left: 0;
 }
@@ -48,7 +50,7 @@
 .title-item .btn-muted{
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 14rem;
 }
 
 .title-item .btn{

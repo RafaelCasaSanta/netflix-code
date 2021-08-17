@@ -11,6 +11,8 @@ import { TitleComponent } from './components/title/title.component';
 
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { SeriesComponent } from  './components/series/series.component'
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
     declarations: [
@@ -21,6 +23,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
         FooterComponent,
         TitleComponent,
         CarouselComponent,
+        SeriesComponent,
+        HomeComponent,
     ],
     imports: [BrowserModule, AppRoutingModule, IvyCarouselModule],
     providers: [],

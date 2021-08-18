@@ -9,4 +9,30 @@
 }
 
 
+.carousel-list{
+    z-index: 0;
+}
+
+
+.carousel-cell{
+    height: 18rem !important;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.carousel-arrows{
+    width: 19px !important;
+    height: 73px !important;
+
+}
+
+
+.carousel-arrow.carousel-arrow-next {
+    right: 20px !important;
+}
+
+.carousel-arrow-next{
+
+}
 

@@ -4,15 +4,16 @@
 }
 
 .title-item .items {
+    border-radius: 1;
     position: absolute;
-    bottom: 84px;
+    top: -18rem;
+    bottom: 18rem;
     left: 0;
     right: 0;
     color: #fff;
     height: 100%;
     padding: 10px;
-    background: -prefix-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,.7));
-    background: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.7));
+
     display: flex;
     align-items: flex-end;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -21,8 +22,9 @@
 .title-item img {
 
     display:flex;
-    height:14rem;
+    height:18rem;
     width: 100%;
+    object-fit: cover;
 }
 .title-item video {
     width: 100%;
@@ -30,6 +32,11 @@
     position: inherit;
     top: 0;
     left: 0;
+
+    width: 100%;
+    object-fit: cover;
+    height: 18rem;
+
 }
 .title-item:hover .items {
     opacity: 1;
@@ -56,12 +63,13 @@
 .title-item .btn{
     background: none;
     border: #fff 2px solid;
-    border-radius: 16px;
+    border-radius: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 37px;
+    top:3rem;
 }
 
 .title-item .btn i {
@@ -71,6 +79,10 @@
 
 .title-item .btn-play i {
     color: red;
+}
+
+.title-item .btn-muted{
+    top:19rem !important;
 }
 .title-item ul {
     display: flex;

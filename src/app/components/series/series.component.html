@@ -2,7 +2,12 @@
 
 
 
-<carousel [images]="images"></carousel>
+<carousel
+[images]="images"
+[loop]="true"
+
+
+></carousel>
 
 
 <div class="backdrop" (click)="closeMenu()" *ngIf="menuOpened"></div>
